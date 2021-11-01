@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrap {
+  width: 50%;
+  height: 360px;
+  border: 1px solid;
+  text-align: center;
+}
+
+#wrap input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+  height: 60px;
+  text-align: right;
+  font-size: 2em;
+}
+
+#wrap button {
+  margin: 6px;
+  height: 30px;
+  width: 25%;
+}
