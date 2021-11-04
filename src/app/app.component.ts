@@ -6,9 +6,18 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  set = 0;
+  value = 0;
+  counter = -1;
+  setValue = [];
 
-  click(x) {
-    this.set = x;
+  keyUp(n) {
+    if (n != '=') {
+      this.counter++;
+      this.setValue.push(this.counter, n);
+    } else {
+      for (let i = 0; i < this.setValue.length; i++) {
+        console.log(this.setValue.indexOf(i));
+      }
+    }
   }
 }
