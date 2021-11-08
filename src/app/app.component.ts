@@ -18,7 +18,6 @@ export class AppComponent {
       this.setValue = this.value;
       this.setCalc = n;
       this.value = '';
-      console.log('5: ' + this.value);
     } else if (this.setValue != null && this.setCalc != null && n == '=') {
       if (this.setCalc == '+') {
         this.value = parseInt(this.setValue) + parseInt(this.value) + '';
